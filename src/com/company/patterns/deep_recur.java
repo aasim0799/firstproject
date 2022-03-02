@@ -4,7 +4,7 @@ public class deep_recur {
     public static void main(String[] args) {
         //int arr[] ={1,2,3};
         //permu(arr);
-
+        subsett("abc","");
 
     }
     public static void permu(int [] arr) {
@@ -21,5 +21,15 @@ public class deep_recur {
         if (n==2) return 2;
 
         return fact(n-1) * n;
+    }
+    public static void subsett(String s,String ans) {
+        if (s.length() == 0) {
+            System.out.println(ans);
+            return;
+        }
+        char ch=s.charAt(0);
+
+        subsett(s.substring(1),ans+ch);
+        subsett(s.substring(1),ans);
     }
 }

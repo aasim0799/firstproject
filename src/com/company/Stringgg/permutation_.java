@@ -1,11 +1,18 @@
 package com.company.Stringgg;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class permutation_ {
-    public static void main(String[] args) {
-        int  n=3;
-        int k=3;
+    public static void main(String[] args) throws IOException {
+        BufferedReader scan=new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("enter n");
+        int n = Integer.parseInt(scan.readLine());
+        System.out.println("enter k");
+        int k=Integer.parseInt(scan.readLine());
         System.out.println(getPermutation(n,k));
     }
 
@@ -19,17 +26,17 @@ public class permutation_ {
 
         k--;
         fact /= n;
-        String ans = "";
+        StringBuilder ans = new StringBuilder();
 
         while(true){
             int temp = k/fact;
-            ans += numbers.get(temp);
+            ans.append(numbers.get(temp));
             numbers.remove(temp);
             if(numbers.size() == 0)break;
             k %= fact;
             fact /= numbers.size();
         }
 
-        return ans;
+        return ans.toString();
     }
 }
