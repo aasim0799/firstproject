@@ -29,6 +29,7 @@ public class ana_str {
 
     public static void main(String args[]) {
         String str = "articles";
-        Printfrequency(str);
+//        Printfrequency(str);
+        System.out.println(SortString(str));
     }
 }

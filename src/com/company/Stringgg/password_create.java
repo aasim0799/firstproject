@@ -9,7 +9,7 @@ public class password_create {
 //            String s=scan.next();
 //            snow(s);
 //        }
-        String s="Geek";
+        String s="Geek11";
         snow(s);
     }
     public static void snow(String s){

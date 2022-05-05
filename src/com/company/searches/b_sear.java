@@ -3,7 +3,7 @@ package com.company.searches;
 public class b_sear {
     public static void main(String[] args) {
         char [] arr={'a','b','c','d'};
-        System.out.println(binar(arr,'d'));
+        System.out.println(binar(arr,'b'));
     }
     public static char binar(char arr[],int target){
         int start=0;

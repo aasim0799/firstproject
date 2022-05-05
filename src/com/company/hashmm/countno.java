@@ -4,7 +4,6 @@ public class countno {
     public static void main(String[] args) {
         int []arr={22,456,24,553,244,5,5555};
         System.out.println(cou(arr));
-
     }
     public static int  cou(int [] arr){
         int count=0;

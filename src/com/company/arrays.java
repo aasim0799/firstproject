@@ -4,19 +4,21 @@ import java.util.Scanner;
 
 public class arrays {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter size");
-        int N = scan.nextInt();
-        int[] a = new int[N];
-        for (int i = 0; i < N; i++) {
-            a[i] = scan.nextInt();
-        }
-        System.out.println("Enter size");
-        int size = scan.nextInt();
-        int[] b = new int[size];
-        for (int i = 0; i < size; i++) {
-            b[i] = scan.nextInt();
-        }
+        int [] a={1,2,3,4,5};
+        int [] b={6,7,8,9};
+//        Scanner scan = new Scanner(System.in);
+//        System.out.println("Enter size");
+//        int N = scan.nextInt();
+//        int[] a = new int[N];
+//        for (int i = 0; i < N; i++) {
+//            a[i] = scan.nextInt();
+//        }
+//        System.out.println("Enter size");
+//        int size = scan.nextInt();
+//        int[] b = new int[size];
+//        for (int i = 0; i < size; i++) {
+//            b[i] = scan.nextInt();
+//        }
         System.out.println(sumOfArray(a,b));
     }
     public static String sumOfArray(int[] a, int[] b) {

@@ -2,9 +2,11 @@ package com.company.hashmm;
 
 public class two_steparr {
     public static void main(String[] args) {
-        System.out.println(steps(3));
-
-        System.out.println(one(2));
+//        System.out.println(steps(3));
+//
+//        System.out.println(one(2));
+        int [] arr={8,9,10,11,12,13,14};
+        System.out.println(binary(arr,8,0,arr.length-1));
     }
     public static int steps(int n){
         if(n==0) return 1;
@@ -19,5 +21,15 @@ public class two_steparr {
         int onestep=one(n-1);
         int tostep=one(n-2);
         return onestep+tostep;
+    }
+    public static int binary(int [] arr,int target,int start,int end){
+        int mid=start+(end-start)/2;
+        if(arr[mid]  == target) {
+            return mid;
+        }
+        if(target < arr[mid]){
+           return  binary(arr,target,start,mid-1);
+        }
+         return    binary(arr, target, mid + 1, end);
     }
 }

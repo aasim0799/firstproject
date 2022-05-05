@@ -19,7 +19,6 @@ public class Mobile {
         return "Above are specifications for iphone 5";
     }
 
-    @Override
     public String toString() {
         return "Mobile{" +
                 "company='" + company + '\'' +

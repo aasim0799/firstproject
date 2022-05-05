@@ -9,7 +9,14 @@ public class two2pair_sum {
         int arr[]={2,7,11,15};
       //  System.out.println(Arrays.toString(two(arr,18)));
         System.out.println(Arrays.toString(sum(arr, 18)));
+//        Map<Integer,Integer> map=new HashMap<>();
+//        for(int i=0;i<arr.length;i++){
+//            map.put(arr[i],i);
+//        }
+//        System.out.println(map.get(11));
+        //ans = 2;
     }
+
     public static int [] two(int arr[],int target){
         for(int i=0;i<arr.length;i++){
             for(int j=arr.length-1;j>i;j--){
@@ -27,7 +34,7 @@ public class two2pair_sum {
         }
         for(int i=0;i<arr.length;i++){
             int find=target-arr[i];
-            if(map.containsKey(find) && map.get(find) != i){
+            if(map.containsKey(find)){
                 return new int []{i,map.get(find)};
             }
         }

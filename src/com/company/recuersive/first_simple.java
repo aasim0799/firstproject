@@ -1,6 +1,6 @@
 package com.company.recuersive;
 
-public class first {
+public class first_simple {
     public static void main(String[] args) {
         int n=302100021;
       //  firstt(n);

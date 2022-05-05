@@ -5,7 +5,7 @@ public class binary_sarch {
         int arr[]={1,3,5,6};
         System.out.println(binary(arr,0,arr.length-1,7));
     }
-    public static int binary(int arr[],int start,int end,int target){
+    public static String binary(int arr[],int start,int end,int target){
        while(start<=end){
            int mid=start+(end-start)/2;
            if(arr[mid]>target){
@@ -15,9 +15,9 @@ public class binary_sarch {
                start=mid+1;
            }
            else{
-               return mid;
+               return "found";
            }
        }
-       return -1;
+       return "not found";
     }
 }

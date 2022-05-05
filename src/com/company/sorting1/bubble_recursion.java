@@ -13,7 +13,7 @@ public class bubble_recursion {
     }
     public static void recur(int arr[],int n){
         if(n==0)
-            return;
+            return ;
         for(int j=0;j<n;j++){
             if(arr[j]>arr[j+1])
                 swap(arr,j,j+1);

@@ -4,14 +4,19 @@ import java.util.Arrays;
 
 public class marge_sort {
     public static void main(String[] args) {
-        int arr[]={2,4,6,8};
-        int arr1[]={3,5,7,9};
-        System.out.println(Arrays.toString(twosorted(arr,arr1)));
-        int a[]={5,4,3,2,1};
-        System.out.println(Arrays.toString(meerge(a,0,a.length-1)));
+//        int[] arr ={2,4,6,8};
+//        int[] arr1 ={3,5,7,9};
+//        System.out.println(Arrays.toString(twosorted(arr,arr1)));
+//        int[] a ={5,4,3,2,1};
+//        System.out.println(Arrays.toString(meerge(a,0,a.length-1)));
+        int x=1;
+        for(int i=1;i<=128;i+=i){
+          x+=x;
+        }
+        System.out.println(x);
     }
     public static int [] twosorted(int [] arr,int[] arr1){
-        int c[]=new int[arr.length+arr1.length];
+        int[] c =new int[arr.length+arr1.length];
         int ai=0;
         int bi=0;
         int k=0;

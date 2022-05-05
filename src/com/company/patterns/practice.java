@@ -1,5 +1,6 @@
 package com.company.patterns;
 
+import java.util.*;
 import java.util.ArrayList;
 
 public class practice {

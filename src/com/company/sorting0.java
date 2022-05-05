@@ -5,6 +5,7 @@ public class sorting0 {
     public static void main(String[] args) {
         int arr[]={1,0,0,1,0,1,0,1};
         System.out.println(Arrays.toString(segregate0and1(arr)));
+        //[0, 0, 0, 1, 1, 1, 1, 1]
     }
 
        static int [] segregate0and1(int arr[])

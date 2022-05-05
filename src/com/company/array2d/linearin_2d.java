@@ -10,12 +10,12 @@ public class linearin_2d {
                 {7,8,9},
         };
 //        System.out.println(Arrays.toString(linear(arr,8)));
-//        linear(arr,8);
-        System.out.println(Arrays.toString(max(arr)));
+        System.out.println(Arrays.toString(linear(arr,6)));
+//        System.out.println(Arrays.toString(max(arr)));
     }
     public static int [] linear(int [][] arr,int target){
         for(int row=0;row<arr.length;row++){
-            for(int col=0;col<arr[row].length;col++){
+            for(int col=0;col<arr[0].length;col++){
                 if(arr[row][col]==target){
                     return new int[]{row,col};
                 }
